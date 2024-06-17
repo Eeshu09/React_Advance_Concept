@@ -1,18 +1,17 @@
+import logo from './logo.svg';
 import './App.css';
-import Product from './Components/TanStackQuery/ApiCrud';
-import ProductDetails from './Components/TanStackQuery/ApiCrud/productDetails';
-import { Route,Routes } from 'react-router-dom';
+import Debouncing from './Components/DebouncingThrottling/Debouncing';
+import Debounce2 from './Components/DebouncingThrottling/Debounce2';
+import { ToastContainer } from 'react-toastify';
+
 function App() {
   return (
     <>
-    {/* <Product/> */}
-    <Routes>
-      <Route path='/product' element={<Product/>}/>
-      <Route path='/productDetails/:id' element={<ProductDetails/>}/>
-
-    </Routes>
-     
+     {/* <Debouncing/> */}
+     <Debounce2/>
+     <ToastContainer/>
     </>
+   
   );
 }
 
